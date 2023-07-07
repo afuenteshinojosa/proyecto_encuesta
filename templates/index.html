@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ES">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Formulario Encuesta </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename = '/css/index.css') }}">
+        </head>
+        <body>
+            <h1>Formulario</h1>
+            <form action="/" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="place">Lugar Dojo:</label>
+                <select id="place" name="place" required>
+                    <option value="Chile">Chile</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil">Brasil</option>
+                    
+                </select>
+                <br>
+                <label for="programming_language">Lenguaje de programación preferido:</label>
+                <select id="programming_language" name="programming_language" required>
+                    <option value="Python">Python</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Java">Java</option>
+                </select>
+                <br>
+                <label for="comments">Comentarios (opcional):</label>
+                <textarea id="comments" name="comments"></textarea>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </body>
+        </html>
+        

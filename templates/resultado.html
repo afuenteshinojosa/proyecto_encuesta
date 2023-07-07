@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tu info es:</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = '/css/index.css') }}">
+</head>
+<body>
+    <h1>Información enviada</h1>
+    <p>Nombre: {{ name }}</p>
+    <p>Lugar Dojo: {{ place }}</p>
+    <p>Lenguaje de programación preferido: {{ programming_language }}</p>
+    <p>Comentarios (opcional): {{ comments }}</p>
+    <a href="/regresar">Regresar</a>
+</body>
+</html>
